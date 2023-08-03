@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GNA Hotel Solutions WordPress Tools\n"
+"POT-Creation-Date: 2023-06-29 10:04+UTC+02:00\n"
+"PO-Revision-Date: 2023-06-29 11:28+0200\n"
+"Last-Translator: Adrià Canal <acanal@gnahs.com>\n"
+"Language-Team: ca <teamweb@gnahs.com>\n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: includes/admin-page.php:6
+msgid "GNA Hotel Solutions WordPress Tools Configuration"
+msgstr "Configuració de GNA Hotel Solutions WordPress Tools"
+
+#: includes/admin-page.php:32
+msgid "Parameters for the GNAHS booking engine"
+msgstr "Paràmetres pel motor de reserves de GNAHS"
+
+#: includes/admin-page.php:39
+msgid "Client UUID"
+msgstr "UUID del client"
+
+#: includes/admin-page.php:47
+msgid "Optional Establishment Code"
+msgstr "Codi d'establiment (opcional)"
+
+#: includes/admin-page.php:55
+msgid "API URL Alias (https://alias.gnahs.app)"
+msgstr "Alias de la URL de l'API (https://alias.gnahs.app)"
+
+#: includes/admin-page.php:63
+msgid "Secret Key"
+msgstr "Secret Key"
+
+#: includes/admin-page.php:71
+msgid "RHO API"
+msgstr "RHO API"
+
+#: includes/admin-page.php:113
+msgid "If you already have a booking page, you can replace its content with the following shortcode: %s for the integration of the booking engine. If the page does not exist, you can generate a default booking page using the button "
+msgstr "Si ja tens una pàgina de reserva, pots reemplaçar el seu contingut amb el següent shortcode: %s per a la integració del motor de reserves. Si la pàgina no existeix, pots generar una pàgina predeterminada amb el motor de reserves des del botó "
+
+#: includes/admin-page.php:114
+msgid "Similarly, if you already have a booking confirmation page, you can replace its content with the following shortcode: %s for the integration of the booking confirmation. If the page does not exist, you can generate a default confirmation page using the button "
+msgstr "A més, si ja tens una pàgina de confirmació de reserva, pots reemplaçar el seu contingut amb el següent shortcode: %s per a la integració de la confirmació de reserva. Si la pàgina no existeix, pots generar una pàgina predeterminada amb la confirmació de reserva des del botó "
+
+#: includes/admin-page.php:115
+msgid "Create Booking Page"
+msgstr "Crear pàgina de Reserva"
+
+#: includes/admin-page.php:116
+msgid "Create Confirmation Page"
+msgstr "Crear pàgina de Confirmació de reserva"
+
+#: includes/admin-page.php:144
+msgid "If an error occurred during plugin installation due to file permissions of the %s file, you can reinsert the rule."
+msgstr "Si en instal·lar l'extensió ha aparegut un error a causa dels permisos de l'arxiu %s, pots tornar a inserir la regla."
+
+#: includes/admin-page.php:145
+msgid "Insert rule into .htaccess"
+msgstr "Inserir regla a .htaccess"
+
+#: includes/admin-notices.php:8
+msgid "The .htaccess file is not editable. Make sure you have the appropriate permissions."
+msgstr "L'arxiu .htaccess no és modificable. Assegura't de tenir els permisos adequats."
+
+#: includes/admin-notices.php:18
+msgid "The redirection rule already exists in the .htaccess file."
+msgstr "La regla de redirecció ja existeix a l'arxiu .htaccess."
+
+#: includes/admin-notices.php:28
+msgid "The page you are trying to create already exists."
+msgstr "La pàgina que intenta crear ja existeix."
+
+#: includes/admin-notices.php:38
+msgid "The page has been created successfully."
+msgstr "La pàgina s'ha creat correctament."

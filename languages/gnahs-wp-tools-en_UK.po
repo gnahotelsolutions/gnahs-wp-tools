@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GNA Hotel Solutions WordPress Tools\n"
+"POT-Creation-Date: 2023-06-29 11:36+0200\n"
+"PO-Revision-Date: 2023-06-29 11:39+0200\n"
+"Last-Translator: Adrià Canal <acanal@gnahs.com>\n"
+"Language-Team: en_UK\n"
+"Language: en_UK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: includes/admin-page.php:6
+msgid "GNA Hotel Solutions WordPress Tools Configuration"
+msgstr "GNA Hotel Solutions WordPress Tools Configuration"
+
+#: includes/admin-page.php:32
+msgid "Parameters for the GNAHS booking engine"
+msgstr "Parameters for the GNAHS booking engine"
+
+#: includes/admin-page.php:39
+msgid "Client UUID"
+msgstr "Client UUID"
+
+#: includes/admin-page.php:47
+msgid "Optional Establishment Code"
+msgstr "Optional Establishment Code"
+
+#: includes/admin-page.php:55
+msgid "API URL Alias (https://alias.gnahs.app)"
+msgstr "API URL Alias (https://alias.gnahs.app)"
+
+#: includes/admin-page.php:63
+msgid "Secret Key"
+msgstr "Secret Key"
+
+#: includes/admin-page.php:71
+msgid "RHO API"
+msgstr "RHO API"
+
+#: includes/admin-page.php:113
+msgid "If you already have a booking page, you can replace its content with the following shortcode: %s for the integration of the booking engine. If the page does not exist, you can generate a default booking page using the button "
+msgstr "If you already have a booking page, you can replace its content with the following shortcode: %s for the integration of the booking engine. If the page does not exist, you can generate a default booking page using the button "
+
+#: includes/admin-page.php:114
+msgid "Similarly, if you already have a booking confirmation page, you can replace its content with the following shortcode: %s for the integration of the booking confirmation. If the page does not exist, you can generate a default confirmation page using the button "
+msgstr "Similarly, if you already have a booking confirmation page, you can replace its content with the following shortcode: %s for the integration of the booking confirmation. If the page does not exist, you can generate a default confirmation page using the button "
+
+#: includes/admin-page.php:115
+msgid "Create Booking Page"
+msgstr "Create Booking Page"
+
+#: includes/admin-page.php:116
+msgid "Create Confirmation Page"
+msgstr "Create Confirmation Page"
+
+#: includes/admin-page.php:144
+msgid "If an error occurred during plugin installation due to file permissions of the %s file, you can reinsert the rule."
+msgstr "If an error occurred during plugin installation due to file permissions of the %s file, you can reinsert the rule."
+
+#: includes/admin-page.php:145
+msgid "Insert rule into .htaccess"
+msgstr "Insert rule into .htaccess"
+
+#: includes/admin-notices.php:8
+msgid "The .htaccess file is not editable. Make sure you have the appropriate permissions."
+msgstr "The .htaccess file is not editable. Make sure you have the appropriate permissions."
+
+#: includes/admin-notices.php:18
+msgid "The redirection rule already exists in the .htaccess file."
+msgstr "The redirection rule already exists in the .htaccess file."
+
+#: includes/admin-notices.php:28
+msgid "The page you are trying to create already exists."
+msgstr "The page you are trying to create already exists."
+
+#: includes/admin-notices.php:38
+msgid "The page has been created successfully."
+msgstr "The page has been created successfully."
