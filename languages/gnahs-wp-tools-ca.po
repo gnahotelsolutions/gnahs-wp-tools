@@ -23,6 +23,9 @@ msgstr "Paràmetres pel motor de reserves de GNAHS"
 msgid "Client UUID"
 msgstr "UUID del client"
 
+msgid "Client slug"
+msgstr "Slug del client"
+
 #: includes/admin-page.php:47
 msgid "Optional Establishment Code"
 msgstr "Codi d'establiment (opcional)"
