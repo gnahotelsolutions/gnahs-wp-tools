@@ -66,29 +66,10 @@ function gnahs_wp_tools_settings_init()
         'gnahs_wp_tools_section'
     );
 
-    add_settings_field(
-        'gnahsengine_secret_key',
-        __('Secret Key', 'gnahs-wp-tools'),
-        'gnahs_wp_tools_secret_key_option_callback',
-        'gnahs_wp_tools_settings',
-        'gnahs_wp_tools_section'
-    );
-
-    add_settings_field(
-        'gnahsengine_rho_api',
-        __('RHO API', 'gnahs-wp-tools'),
-        'gnahs_wp_tools_rho_api_option_callback',
-        'gnahs_wp_tools_settings',
-        'gnahs_wp_tools_section'
-    );
-
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_uuid');
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_slug');
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_establishment_id');
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_api_url');
-
-    register_setting('gnahs_wp_tools_settings', 'gnahsengine_secret_key');
-    register_setting('gnahs_wp_tools_settings', 'gnahsengine_rho_api');
 }
 
 function gnahs_wp_tools_uuid_option_callback()
