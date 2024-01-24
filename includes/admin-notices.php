@@ -5,7 +5,7 @@ function gnahs_page_already_exists_notice()
 {
     ?>
     <div class="notice notice-info is-dismissible">
-        <p><?php __('The page you are trying to create already exists.', 'gnahs-wp-tools'); ?></p>
+        <p><?php echo __('The page you are trying to create already exists.', 'gnahs-wp-tools'); ?></p>
     </div>
     <?php
 }
@@ -15,7 +15,7 @@ function gnahs_page_success_created_notice()
 {
     ?>
     <div class="notice notice-success is-dismissible">
-        <p><?php __('The page has been created successfully.', 'gnahs-wp-tools'); ?></p>
+        <p><?php echo __('The page has been created successfully.', 'gnahs-wp-tools'); ?></p>
     </div>
     <?php
 }
