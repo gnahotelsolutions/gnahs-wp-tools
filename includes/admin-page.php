@@ -6,20 +6,15 @@ function gnahs_wp_tools_settings_page()
         <h1><?= __('GNA Hotel Solutions WordPress Tools Configuration', 'gnahs-wp-tools') ?></h1>
         <form method="post" action="options.php">
             <?php
-            settings_fields('gnahs_wp_tools_settings');
-    do_settings_sections('gnahs_wp_tools_settings');
-    submit_button();
-    ?>
-        </form>
-        <form method="post" action="">
-        <?php
-            gnahs_wp_tools_execute_booking_engine_pages_insert_button();
-    ?>
+                settings_fields('gnahs_wp_tools_settings');
+                do_settings_sections('gnahs_wp_tools_settings');
+                submit_button();
+            ?>
         </form>
         <form method="post" action="">
             <?php
-            gnahs_wp_tools_execute_htaccess_insert_button();
-    ?>
+                gnahs_wp_tools_execute_booking_engine_pages_insert_button();
+            ?>
         </form>
     </div>
     <?php
@@ -126,24 +121,8 @@ function gnahs_wp_tools_execute_booking_details_page_insert()
     }
 }
 
-function gnahs_wp_tools_execute_htaccess_insert()
-{
-    if (isset($_POST['execute_htaccess_insert'])) {
-        gnahs_insert_htaccess_rule();
-    }
-}
-
-function gnahs_wp_tools_execute_htaccess_insert_button()
-{
-    ?>
-    <p><?= sprintf(__('If an error occurred during plugin installation due to file permissions of the %s file, you can reinsert the rule.', 'gnahs-wp-tools'), '<b>.htaccess</b>') ?></p>
-    <input type="submit" name="execute_htaccess_insert" class="button-primary" value="<?= __('Insert rule into .htaccess', 'gnahs-wp-tools') ?>" />
-    <?php
-}
-
 add_action('admin_init', 'gnahs_wp_tools_execute_booking_page_insert');
 add_action('admin_init', 'gnahs_wp_tools_execute_booking_details_page_insert');
-add_action('admin_init', 'gnahs_wp_tools_execute_htaccess_insert');
 add_action('admin_menu', 'gnahs_wp_tools_add_settings_page');
 add_action('admin_init', 'gnahs_wp_tools_settings_init');
 
