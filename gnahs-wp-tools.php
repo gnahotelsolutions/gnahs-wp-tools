@@ -3,7 +3,7 @@
  * Plugin Name: GNA Hotel Solutions WordPress Tools
  * Plugin URI: https://www.gnahs.com
  * Description: WordPress Hotel Tools developed by GNAHS
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: GNA Hotel Solutions
  * Author URI: https://www.gnahs.com
  * License: GPLv2 o posterior

@@ -2,7 +2,9 @@
 <script>
     window.BookingParams = window.BookingParams || {}
     window.BookingParams.uuid = '<?= $atts['uuid'] ?>'
-    window.BookingParams.singleEstablishment = <?= $atts['establishmentId'] ?> || null
+    <?php if ($atts['establishmentId']) { ?>
+    window.BookingParams.singleEstablishment = <?= $atts['establishmentId'] ?>
+    <?php } ?>
     window.BookingParams.language = window.BookingParams.language || '<?= get_locale() ?>'
     window.BookingParams.api = 'https://<?= $atts['api'] ?>.gnahs.app'
     window.BookingParams.assets = 'https://<?= $atts['api'] ?>.gnahs.app/dist/'
