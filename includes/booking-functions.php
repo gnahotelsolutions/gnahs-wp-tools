@@ -28,22 +28,22 @@ function gnahs_booking_engine_shortcode($atts)
 }
 add_shortcode('gnahsengine', 'gnahs_booking_engine_shortcode');
 
-// Shortcode para cargar el booking-details
-function gnahs_booking_details_shortcode($atts)
+// Shortcode para cargar la página "mi reserva"
+function gnahs_my_booking_shortcode($atts)
 {
     $atts = shortcode_atts(
         array(
-            'secretKey'     => get_option('gnahsengine_secret_key', ''),
-            'rhoApi'        => get_option('gnahsengine_rho_api', ''),
+            'api'     => get_option('gnahsengine_api_url', ''),
+            'slug'    => get_option('gnahsengine_slug', ''),
         ),
         $atts
     );
 
     ob_start();
-    include(plugin_dir_path(__FILE__) . '../views/booking-details.php');
+    include(plugin_dir_path(__FILE__) . '../views/my-booking.php');
     return ob_get_clean();
 }
-add_shortcode('booking-details', 'gnahs_booking_details_shortcode');
+add_shortcode('gnahs-my-booking', 'gnahs_my_booking_shortcode');
 
 // Registra la página "booking"
 function gnahs_create_booking_page()
@@ -70,24 +70,24 @@ function gnahs_create_booking_page()
     }
 }
 
-// Registra la página "booking-details"
-function gnahs_create_booking_details_page()
+// Registra la página "mi reserva"
+function gnahs_create_my_booking_page()
 {
-    $booking_details_page = get_page_by_path('booking-details');
-    if (!isset($booking_details_page)) {
-        // Crea la página "booking-details"
-        $booking_details_page_id = wp_insert_post(
+    $my_booking_page = get_page_by_path('my-booking');
+    if (!isset($my_booking_page)) {
+        // Crea la página "mi reserva"
+        $my_booking_page_id = wp_insert_post(
             array(
-                'post_title'   => 'Confirmación de la reserva',
-                'post_content' => '[booking-details]',
+                'post_title'   => 'Mi reserva',
+                'post_content' => '[my-booking]',
                 'post_status'  => 'publish',
                 'post_type'    => 'page',
-                'post_name'    => 'booking-details',
+                'post_name'    => 'my-booking',
             )
         );
 
-        // Establece el slug de la página "booking-details" como "booking-details"
-        update_post_meta($booking_details_page_id, '_wp_page_template', 'default');
+        // Establece el slug de la página "mi reserva" como "my-booking"
+        update_post_meta($my_booking_page_id, '_wp_page_template', 'default');
         add_action('admin_notices', 'gnahs_page_success_created_notice');
     } else {
         // La página ya existe, muestra un mensaje informativo en la administración
