@@ -100,7 +100,7 @@ function gnahs_wp_tools_rho_api_option_callback()
 function gnahs_wp_tools_execute_booking_engine_pages_insert_button()
 {
     ?>
-    <p><?= sprintf(__('If you already have a booking page, you can replace its content with the following shortcode: %s for the integration of the booking engine. If the page does not exist, you can generate a default booking page using the button ', 'gnahs-wp-tools'), '<b>[gnahsengine]</b>') ?><b><?= __('Create Booking Page', 'gnahs-wp-tools') ?></b>.
+    <p><?= sprintf(__('If you already have a booking page, you can replace its content with the following shortcode: %s for the integration of the booking engine. If the page does not exist, you can generate a default booking page using the button ', 'gnahs-wp-tools'), '<b>[gnahs-engine]</b>') ?><b><?= __('Create Booking Page', 'gnahs-wp-tools') ?></b>.
     <br><?= sprintf(__('Similarly, if you already have a booking confirmation page, you can replace its content with the following shortcode: %s for the integration of the booking confirmation. If the page does not exist, you can generate a default confirmation page using the button ', 'gnahs-wp-tools'), '<b>[gnahs-my-booking]</b>') ?><b><?= __('Create Confirmation Page', 'gnahs-wp-tools') ?></b>.</p>
     <input type="submit" name="execute_booking_page_insert" class="button-primary" value="<?= __('Create Booking Page', 'gnahs-wp-tools') ?>" />
     <input type="submit" name="execute_booking_details_page_insert" class="button-primary" value="<?= __('Create Confirmation Page', 'gnahs-wp-tools') ?>" />

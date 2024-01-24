@@ -23,10 +23,10 @@ function gnahs_booking_engine_shortcode($atts)
     );
 
     ob_start();
-    include(plugin_dir_path(__FILE__) . '../views/gnahsengine.php');
+    include(plugin_dir_path(__FILE__) . '../views/engine.php');
     return ob_get_clean();
 }
-add_shortcode('gnahsengine', 'gnahs_booking_engine_shortcode');
+add_shortcode('gnahs-engine', 'gnahs_booking_engine_shortcode');
 
 // Shortcode para cargar la página "mi reserva"
 function gnahs_my_booking_shortcode($atts)
@@ -54,7 +54,7 @@ function gnahs_create_booking_page()
         $booking_page_id = wp_insert_post(
             array(
                 'post_title'   => 'Reservar',
-                'post_content' => '[gnahsengine]',
+                'post_content' => '[gnahs-engine]',
                 'post_status'  => 'publish',
                 'post_type'    => 'page',
                 'post_name'    => 'booking',
@@ -79,7 +79,7 @@ function gnahs_create_my_booking_page()
         $my_booking_page_id = wp_insert_post(
             array(
                 'post_title'   => 'Mi reserva',
-                'post_content' => '[my-booking]',
+                'post_content' => '[gnahs-my-booking]',
                 'post_status'  => 'publish',
                 'post_type'    => 'page',
                 'post_name'    => 'my-booking',
