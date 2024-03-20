@@ -16,7 +16,7 @@ function gnahs_booking_engine_shortcode($atts)
     $atts = shortcode_atts(
         array(
             'uuid'            => get_option('gnahsengine_uuid', ''),
-            'establishmentId' => get_option('gnahsengine_establishment_id', ''),
+            'establishments'  => get_option('gnahsengine_establishments', ''),
             'api'             => get_option('gnahsengine_api_url', ''),
         ),
         $atts

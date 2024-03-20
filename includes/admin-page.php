@@ -46,8 +46,8 @@ function gnahs_wp_tools_settings_init()
     );
 
     add_settings_field(
-        'gnahsengine_establishment_id',
-        __('Optional Establishment Code', 'gnahs-wp-tools'),
+        'gnahsengine_establishments',
+        __('Establishment codes (comma separated if there is more than one)', 'gnahs-wp-tools'),
         'gnahs_wp_tools_establishment_id_option_callback',
         'gnahs_wp_tools_settings',
         'gnahs_wp_tools_section'
@@ -63,7 +63,7 @@ function gnahs_wp_tools_settings_init()
 
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_uuid');
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_slug');
-    register_setting('gnahs_wp_tools_settings', 'gnahsengine_establishment_id');
+    register_setting('gnahs_wp_tools_settings', 'gnahsengine_establishments');
     register_setting('gnahs_wp_tools_settings', 'gnahsengine_api_url');
 }
 
@@ -79,7 +79,7 @@ function gnahs_wp_tools_slug_option_callback()
 
 function gnahs_wp_tools_establishment_id_option_callback()
 {
-    echo '<input type="text" name="gnahsengine_establishment_id" value="' . esc_attr(get_option('gnahsengine_establishment_id')) . '" />';
+    echo '<input type="text" name="gnahsengine_establishments" value="' . esc_attr(get_option('gnahsengine_establishments')) . '" />';
 }
 
 function gnahs_wp_tools_api_url_option_callback()

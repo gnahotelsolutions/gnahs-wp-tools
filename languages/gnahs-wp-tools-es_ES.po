@@ -27,8 +27,8 @@ msgid "Client slug"
 msgstr "Slug del cliente"
 
 #: includes/admin-page.php:47
-msgid "Optional Establishment Code"
-msgstr "Código de establecimiento (opcional)"
+msgid "Establishment codes (comma separated if there is more than one)"
+msgstr "Códigos de establecimiento (separados por coma si hay más de uno)"
 
 #: includes/admin-page.php:55
 msgid "API URL Alias (https://alias.gnahs.app)"
