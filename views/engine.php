@@ -1,13 +1,12 @@
 <div id="GNAHSEngine" style="max-width: none !important;"></div>
 <script>
-    window.BookingParams = window.BookingParams || {};
-    window.BookingParams.uuid = '<?= $atts['uuid'] ?>';
-    <?php if ($atts['establishmentId']) { ?>
-    window.BookingParams.singleEstablishment = <?= $atts['establishmentId'] ?>;
-    <?php } ?>
-    window.BookingParams.language = window.BookingParams.language || '<?= get_locale() ?>';
-    window.BookingParams.api = 'https://<?= $atts['api'] ?>.gnahs.app';
-    window.BookingParams.assets = 'https://<?= $atts['api'] ?>.gnahs.app/dist/';
+    window.BookingParams = {
+        uuid: '<?= $atts['uuid'] ?>',
+        establishments: [<?= $atts['establishments'] ?>],
+        language: '<?= get_locale() ?>',
+        api: 'https://<?= $atts['api'] ?>.gnahs.app',
+        assets: 'https://<?= $atts['api'] ?>.gnahs.app/dist/'
+    }
  </script>
  <script src="https://assets.gnahs.com/scripts/rho-initialization/gnahs-get-rho-initial-settings-v2.js" onload="(new GNAHSGetRhoInitialSettings())"></script>
  <script src="https://assets.gnahs.com/scripts/booking-engine/fetch.min.js"></script>
