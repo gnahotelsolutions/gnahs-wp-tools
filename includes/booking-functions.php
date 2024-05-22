@@ -45,6 +45,22 @@ function gnahs_my_booking_shortcode($atts)
 }
 add_shortcode('gnahs-my-booking', 'gnahs_my_booking_shortcode');
 
+// Shortcode para cargar agencias
+function gnahs_agencies_shortcode($atts)
+{
+    $atts = shortcode_atts(
+        array(
+            'uuid'    => get_option('gnahsengine_uuid', ''),
+        ),
+        $atts
+    );
+
+    ob_start();
+    include(plugin_dir_path(__FILE__) . '../views/agencies.php');
+    return ob_get_clean();
+}
+add_shortcode('gnahs-agencies', 'gnahs_agencies_shortcode');
+
 // Registra la página "booking"
 function gnahs_create_booking_page()
 {
