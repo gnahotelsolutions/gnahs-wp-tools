@@ -18,6 +18,9 @@ function gnahs_booking_engine_shortcode($atts)
             'uuid'            => get_option('gnahsengine_uuid', ''),
             'establishments'  => get_option('gnahsengine_establishments', ''),
             'api'             => get_option('gnahsengine_api_url', ''),
+            'room_id'         => null,
+            'offer_id'        => null,
+            'rate_id'         => null,
         ),
         $atts
     );
