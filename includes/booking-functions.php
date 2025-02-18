@@ -5,7 +5,7 @@ function gnahs_add_metasearch_cookies_script()
 {
     // Verificar si el script ya ha sido agregado
     if (!wp_script_is('gnahs-metasearch-cookies', 'enqueued')) {
-        echo '<script src="https://assets.gnahs.com/scripts/rho-initialization/gnahs-metasearch-cookies-v2.js" onload="(new GNAHSMetasearchCookies())"></script>';
+        echo '<script src="https://assets.gnahs.com/services/booking-engine/metasearch-tracker/v1/launcher.js" defer></script>';
     }
 }
 add_action('wp_head', 'gnahs_add_metasearch_cookies_script');
